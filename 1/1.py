@@ -3,9 +3,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # 读取图片
-img_name = 'E:\\甲骨文智能识别中原始拓片单字自动分割与识别研究\\1_Pre_test\\h02060.jpg'
+img_name = './h02060.jpg'
 img = cv2.imread(img_name)
-
+print()
 # 图像灰度化处理
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
@@ -32,4 +32,5 @@ plt.imshow(contour_img)
 plt.show()
 
 # 保存处理后的图像
-cv2.imwrite('E:\\甲骨文智能识别中原始拓片单字自动分割与识别研究\\1_Pre_test\\result\\processed_' + img_name, contour_img)
+cv2.imwrite('processed_' + img_name,
+            contour_img)

@@ -1,11 +1,11 @@
-path: E:\\ocdata  # dataset root dir
-train: E:\\ocdata\\2_Train  # train images (relative to 'path') 118287 images
+path: E:\\ocdata_origin  # dataset root dir
+train: E:\\ocdata_origin\\img  # train images (relative to 'path') 118287 images
 val: E:\\ocdata\\2_Train  # val images (relative to 'path') 5000 images
 test: E:\\ocdata\\3_Test\\Figures  # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
 
 # Classes
 names:
-  0: 1
+  0: 0
 
 # stuff names
 stuff_names: [

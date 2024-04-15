@@ -37,10 +37,12 @@ def save_to_txt(yolo_annotations, txt_file):
 
 
 # Define the paths for the images and labels
-image_folder = "E:\\ocdata\\2_Train"
-label_folder = "E:\\ocdata\\2_Train"
-output_folder = "E:\\ocdata\\2_Train"
-
+# image_folder = "E:\\ocdata\\2_Train"
+# label_folder = "E:\\ocdata\\2_Train"
+# output_folder = "E:\\ocdata\\2_Train"
+image_folder = "E:\\ocdata_origin\\img"
+label_folder = "E:\\ocdata_origin\\train_label"
+output_folder = "E:\\ocdata_origin\\img"
 # Ensure the output folder exists
 os.makedirs(output_folder, exist_ok=True)
 

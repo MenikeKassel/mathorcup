@@ -4,7 +4,7 @@ from PIL import Image
 
 # Define the paths for the images and labels
 image_folder = 'E:\\ocdata\\3_Test\\Figures'
-label_folder = 'E:\\pythonProject_mathorcup\\yolov9\\runs\\detect\\exp\\labels'
+label_folder = 'E:\\pythonProject_mathorcup\\yolov9\\runs\\detect\\exp12\\labels'
 output_csv_path = 'E:\\pythonProject_mathorcup\\2\\result\\result.csv'  # Output CSV file named "11.csv"
 
 # Function to get image size
@@ -47,7 +47,7 @@ with open(output_csv_path, 'w', newline='', encoding='utf-8') as csvfile:
     writer.writerow(['image_name', 'annotations'])
     for base_filename, anns in converted_annotations.items():
         # Convert each bounding box to a string and then join all with a delimiter (e.g., ";")
-        all_anns = '; '.join(['[' + ', '.join(map(str, ann)) + ']' for ann in anns])
+        all_anns = ', '.join(['[' + ', '.join(map(str, ann)) + ']' for ann in anns])
         writer.writerow([base_filename, all_anns])
 
 output_csv_path

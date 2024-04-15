@@ -32,7 +32,8 @@ def calculate_iou(box1, box2):
     # Compute the IoU
     iou = intersection_area / union_area
     return iou
-predicted_boxes = [[112, 111, 143, 169], [204, 49, 230, 114],[207, 128, 228, 167]]
+predicted_boxes = [[110, 108, 146, 172, 1.0],[199, 47, 233, 114, 1.0],[200, 124, 233, 168, 1.0],
+]
 true_boxes = [[102, 102, 146, 173], [201, 50, 224, 113], [200, 117, 229, 174]]
 
 # Assuming the order of the boxes corresponds between predictions and ground truths

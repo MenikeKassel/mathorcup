@@ -46,8 +46,6 @@ with open(output_csv_path, 'w', newline='', encoding='utf-8') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(['image_name', 'annotations'])
     for base_filename, anns in converted_annotations.items():
-        result=[]
-        for ann in anns:
-            result.append(ann)
-        writer.writerow([base_filename] + result)  # concatenate the filename with the annotatio
+        writer.writerow([base_filename, anns.values])
+
 output_csv_path
